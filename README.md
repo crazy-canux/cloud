@@ -29,3 +29,16 @@ cdk8s能将开发者的代码编译为k8s支持的yaml文件来管理k8s资源�
 用来管理terraform资源（管理云基础设施，或者管理k8s资源）。
 
 cdktf能将开发者的代码编译为terraform支持的tf格式文件来管理资源。
+
+    // create project.
+    cdktf init --template="go"
+    // get terraform provider.
+    cdktf get
+    // install go pkg.
+    go mod tidy
+    // provision resource.
+    cdktf deploy
+    // generate files can be used by terraform.
+    cdktf synth
+    // remove resource.
+    cdktf destroy
